@@ -11,7 +11,7 @@ resource "aws_key_pair" "apptest_key" {
 
 resource "aws_instance" "app_test_instance" {
   count                  = 2
-  ami_id                    = var.ami_id
+  ami                    = var.ami_id
   instance_type          = var.instance_type
   key_name               = aws_key_pair.apptest_key.id
   vpc_security_group_ids = [var.security_group]
