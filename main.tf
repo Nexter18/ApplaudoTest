@@ -12,7 +12,7 @@ module "vpc" {
 module "ec2" {
   source         = "./ec2"
   my_public_key  = "/.ssh/pb-JHELIRRNTGPEZT6AO5JPEKKHDHOGI6TE.pub"
-  ami            = "ami-0b9064170e32bde34"
+  ami_id            = "ami-0b9064170e32bde34"
   instance_type  = "t2.micro"
   security_group = module.vpc.security_group
   subnets        = module.vpc.public_subnets
