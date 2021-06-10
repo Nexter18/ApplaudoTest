@@ -15,4 +15,4 @@ Create a CI/CD template in any tool that you know, deploy an update to an Nginx 
     `ssh-keygen -N '' -f ./certs/ovpn`
 
 3. Edit your own `cert_details` (use `cert_details.sample` as template)
-
+4. The new .ovpn file will be copied from new instance into cert_details. Open with your OpenVPN client.
